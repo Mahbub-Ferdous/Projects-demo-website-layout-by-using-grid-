@@ -1,0 +1,49 @@
+
+.container {
+    background-color: rgb(247, 195, 132);
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+    gap: 10px;
+    grid-template-areas:
+        'header header header'
+        'menu section main'
+        'menu article article'
+        'footer footer footer'
+}
+.container-items {
+    background-color: cadetblue;
+    border: 1px solid black;
+    font-size: 30px;
+    text-align: center;
+    padding: 20px;
+
+}
+.header {
+    grid-area: header;
+    background-color: rgb(25, 247, 247);
+}
+.menu {
+    background-color: rgb(103, 201, 6);
+    grid-area: menu;
+    display: grid;
+    align-content: center;
+    /* cause eta center ana lagbe ar align-content: center; dile seta horizontal and vertically e center hoy */
+}
+.section {
+    grid-area: section;
+    background-color: rgb(69, 69, 240);
+}
+.main {
+    grid-area: main;
+    background-color: rgb(212, 67, 15);
+
+}
+.article {
+    grid-area: article;
+    background-color: rgb(214, 73, 214);
+}
+.footer {
+    grid-area: footer;
+    background-color: rgb(99, 96, 96);
+}    
